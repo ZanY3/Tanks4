@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657892, g: 0.49641234, b: 0.57481664, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657958, g: 0.49641275, b: 0.57481784, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -180,6 +180,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 3e172c774c3df403a961d3b3111d0cd4, type: 2}
     - target: {fileID: 6419829815343689093, guid: 9a24dfbb1d6444cb2a33855e91d91bb4, type: 3}
+      propertyPath: speed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419829815343689093, guid: 9a24dfbb1d6444cb2a33855e91d91bb4, type: 3}
       propertyPath: shootKey
       value: 47
       objectReference: {fileID: 0}
@@ -190,6 +194,10 @@ PrefabInstance:
     - target: {fileID: 6419829815343689093, guid: 9a24dfbb1d6444cb2a33855e91d91bb4, type: 3}
       propertyPath: horizontal
       value: Horizontal2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419829815343689093, guid: 9a24dfbb1d6444cb2a33855e91d91bb4, type: 3}
+      propertyPath: rotateSpeed
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 9148447932205665903, guid: 9a24dfbb1d6444cb2a33855e91d91bb4, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -545,12 +553,20 @@ PrefabInstance:
       value: Tank 1
       objectReference: {fileID: 0}
     - target: {fileID: 6419829815343689093, guid: 9a24dfbb1d6444cb2a33855e91d91bb4, type: 3}
+      propertyPath: speed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419829815343689093, guid: 9a24dfbb1d6444cb2a33855e91d91bb4, type: 3}
       propertyPath: vertical
       value: Vertical
       objectReference: {fileID: 0}
     - target: {fileID: 6419829815343689093, guid: 9a24dfbb1d6444cb2a33855e91d91bb4, type: 3}
       propertyPath: horizontal
       value: Horizontal
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419829815343689093, guid: 9a24dfbb1d6444cb2a33855e91d91bb4, type: 3}
+      propertyPath: rotateSpeed
+      value: 180
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
