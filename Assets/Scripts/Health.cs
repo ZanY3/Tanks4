@@ -8,12 +8,12 @@ public class Health : MonoBehaviour
     public float partCount;
     public float health = 3;
     public AudioSource source;
-   public void Die()
+    public void Die()
     {
-        if(health == 0)
+        if (health == 0)
         {
 
-            for(int i = 0; i < partCount; i++)
+            for (int i = 0; i < partCount; i++)
             {
                 source.Play();
                 Destroy(gameObject);
@@ -21,5 +21,5 @@ public class Health : MonoBehaviour
                 Instantiate(particle, transform.position + offset, transform.rotation);
             }
         }
-    }
+    }   
 }

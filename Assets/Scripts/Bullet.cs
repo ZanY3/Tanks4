@@ -29,6 +29,7 @@ public class Bullet : MonoBehaviour
         }
         if(collision.gameObject.tag.Contains("Player"))
         {
+
             collision.gameObject.GetComponent<Health>().health -= 1;
             collision.gameObject.GetComponent<Health>().Die();
         }

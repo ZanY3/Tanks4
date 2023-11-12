@@ -21,14 +21,14 @@ public class Tank : MonoBehaviour
         GetComponent<Rigidbody>().velocity = transform.forward * speed * ver;
 
         var hor = Input.GetAxis(horizontal);
-        transform.Rotate(0,rotateSpeed * hor * Time.deltaTime,0);
+        transform.Rotate(0, rotateSpeed * hor * Time.deltaTime, 0);
 
         if (Input.GetKeyDown(shootKey))
         {
             shootSource.Play();
             //print("Boom !!!");
-            Instantiate(bullet,shootPoint.position,shootPoint.rotation);
+            Instantiate(bullet, shootPoint.position, shootPoint.rotation);
         }
-        
+
     }
 }
