@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Tank : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class Tank : MonoBehaviour
     public GameObject bullet;
     public Transform shootPoint;
     public AudioSource shootSource;
+
 
     void Update()
     {
@@ -29,6 +31,5 @@ public class Tank : MonoBehaviour
             //print("Boom !!!");
             Instantiate(bullet, shootPoint.position, shootPoint.rotation);
         }
-
     }
 }
