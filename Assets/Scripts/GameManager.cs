@@ -11,10 +11,15 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        Invoke("Die", 3f);
+    }
+    public void Die()
+    {
         if (player1.health == 0 || player2.health == 0)
         {
             SceneManager.LoadScene(DieScene);
 
         }
     }
+
 }

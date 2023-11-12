@@ -8,6 +8,10 @@ public class Health : MonoBehaviour
     public float partCount;
     public float health = 3;
     public AudioSource source;
+    private void Update()
+    {
+        Die();
+    }
     public void Die()
     {
         if (health == 0)
